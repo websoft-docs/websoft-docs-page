@@ -8,15 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "📕 WebSoft Docs",
+    pageTitle: "📚 WebSoft Docs",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible", // TODO: Настроить
     },
     locale: "ru-RU",
-    baseUrl: "wracce.github.io/websoft-docs-page",
-
+    baseUrl: "quartz.jzhao.xyz/", //"wracce.github.io/websoft-docs-page",
     ignorePatterns: ["private", "templates", ".obsidian","README.md"],
     defaultDateType: "created",
     theme: {
