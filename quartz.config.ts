@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible", // TODO: Настроить
     },
     locale: "ru-RU",
-    baseUrl: "quartz.jzhao.xyz/", //"wracce.github.io/websoft-docs-page",
+    baseUrl: "websoft-docs.ru", //"wracce.github.io/websoft-docs-page",
     ignorePatterns: ["private", "templates", ".obsidian","README.md"],
     defaultDateType: "created",
     theme: {
@@ -74,6 +74,7 @@ const config: QuartzConfig = {
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
+      Plugin.CNAME(),
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
