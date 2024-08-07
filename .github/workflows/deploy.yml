@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - v4
-  repository_dispatch:
-    types: [trigger-deploy]
+
 
 permissions:
   contents: read
@@ -22,11 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
           submodules: true # Чтобы подтянуть подмодули
-          submodules_recursive: true
-      - name: Update submodules
-        run: git submodule update --remote --merge
       - uses: actions/setup-node@v4
       - name: Install Dependencies
         run: npm ci
