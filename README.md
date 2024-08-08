@@ -1,18 +1,14 @@
-# Quartz v4
+# WEBSOFT DOCS PAGE
+#### ❓ Цель проекта
+> Сделать удобным и доступным работу с базой знаний [websoft-docs](https://github.com/punkhomov/websoft-docs) для разрабочтиков.
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+#### ✨ Возможности
+- Удобный поиск по документации
+- Навигация по докментации
+- Адаптивность страницы
+- Поддержка "Темной темы"
+- Бсыстрая загрузка страницы
+- Страница без перезагрузок (SPA)
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+---
+__Основан на [Quartz v4](https://quartz.jzhao.xyz/)__
