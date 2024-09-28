@@ -3,7 +3,40 @@ $mobileBreakpoint: 600px;
 $tabletBreakpoint: 1000px;
 $sidePanelWidth: 380px; //314px;
 $topSpacing: 6rem;
-$fullPageWidth: $pageWidth + 2 * $sidePanelWidth;
 $boldWeight: 700;
 $semiBoldWeight: 600;
 $normalWeight: 400;
+
+$mobileGrid: (
+  templateRows: "auto auto auto auto auto",
+  templateColumns: "auto",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"sidebar-left"\
+      "page-header"\
+      "page-center"\
+      "sidebar-right"\
+      "page-footer"',
+);
+$tabletGrid: (
+  templateRows: "auto auto auto auto",
+  templateColumns: "#{$sidePanelWidth} auto",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"sidebar-left page-header"\
+      "sidebar-left page-center"\
+      "sidebar-left sidebar-right"\
+      "sidebar-left page-footer"',
+);
+$desktopGrid: (
+  templateRows: "auto auto auto",
+  templateColumns: "#{$sidePanelWidth} auto #{$sidePanelWidth}",
+  rowGap: "5px",
+  columnGap: "5px",
+  templateAreas:
+    '"sidebar-left page-header sidebar-right"\
+      "sidebar-left page-center sidebar-right"\
+      "sidebar-left page-footer sidebar-right"',
+);
